@@ -1,6 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
-
+/* for getline() error */
 #define _GNU_SOURCE
 
 #include <stdio.h>
@@ -44,7 +44,7 @@ typedef struct instruction_s
 extern int golobal_var;
 int global_var;
 
-/* iterprator functions */
+/* interprator functions */
 void read_file(char *filename);
 void free_stack(stack_t **stack);
 char **tokenize(char *buffer);
